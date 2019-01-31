@@ -1,0 +1,43 @@
+{
+  "name": "pmdc-alert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "mocha --require @babel/register --colors --recursive ./test/**/*.js",
+    "test:watch": "mocha --require @babel/register --colors -w --recursive ./test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/permettez-moi-de-construire/pmdc-alert.git"
+  },
+  "author": "raph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/permettez-moi-de-construire/pmdc-alert/issues"
+  },
+  "keywords": [
+    "es6",
+    "library",
+    "universal",
+    "umd"
+  ],
+  "homepage": "https://github.com/permettez-moi-de-construire/pmdc-alert#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.0.0",
+    "microbundle": "^0.9.0",
+    "mocha": "^4.0.1",
+    "sinon": "^4.4.6",
+    "standard": "^11.0.1",
+    "standard-loader": "^6.0.1",
+    "yargs": "^10.0.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
