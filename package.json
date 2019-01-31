@@ -5,8 +5,10 @@
   "main": "lib/pmdc-alert.js",
   "umd:main": "lib/pmdc-alert.umd.js",
   "scripts": {
-    "build": "microbundle -o lib --external 'lodash/once' && npm run test",
-    "dev": "microbundle watch",
+    "compile": "microbundle -o lib --globals lodash=_",
+    "compile:watch": "microbundle watch -o lib --globals lodash=_",
+    "build": "npm run compile && npm run test",
+    "dev": "npm run compile:watch",
     "test": "node ./test/index.js",
     "test:watch": "mocha --require @babel/register --colors -w --recursive ./test/**/*.js"
   },

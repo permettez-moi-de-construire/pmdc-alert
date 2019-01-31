@@ -1,4 +1,4 @@
-import once from 'lodash/once'
+import { once } from 'lodash'
 
 class AlertGenerator {
   constructor (containerEl) {
