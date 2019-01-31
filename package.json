@@ -2,10 +2,10 @@
   "name": "pmdc-alert",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
-  "umd:main": "dist/index.umd.js",
+  "main": "lib/index.js",
+  "umd:main": "lib/index.umd.js",
   "scripts": {
-    "build": "microbundle",
+    "build": "microbundle -o lib",
     "dev": "microbundle watch",
     "test": "mocha --require @babel/register --colors --recursive ./test/**/*.js",
     "test:watch": "mocha --require @babel/register --colors -w --recursive ./test/**/*.js"
