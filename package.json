@@ -1,6 +1,6 @@
 {
   "name": "@permettezmoideconstruire/pmdc-alert",
-  "version": "0.0.1",
+  "version": "0.0.1-beta",
   "description": "",
   "main": "lib/index.js",
   "umd:main": "lib/index.umd.js",
