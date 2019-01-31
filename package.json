@@ -2,8 +2,8 @@
   "name": "@permettezmoideconstruire/pmdc-alert",
   "version": "0.0.1-beta",
   "description": "",
-  "main": "lib/index.js",
-  "umd:main": "lib/index.umd.js",
+  "main": "lib/pmdc-alert.js",
+  "umd:main": "lib/pmdc-alert.umd.js",
   "scripts": {
     "build": "microbundle -o lib && npm run test",
     "dev": "microbundle watch",
