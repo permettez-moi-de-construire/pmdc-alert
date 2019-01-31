@@ -5,9 +5,9 @@
   "main": "lib/index.js",
   "umd:main": "lib/index.umd.js",
   "scripts": {
-    "build": "microbundle -o lib",
+    "build": "microbundle -o lib && npm run test",
     "dev": "microbundle watch",
-    "test": "mocha --require @babel/register --colors --recursive ./test/**/*.js",
+    "test": "node ./test/index.js",
     "test:watch": "mocha --require @babel/register --colors -w --recursive ./test/**/*.js"
   },
   "repository": {
